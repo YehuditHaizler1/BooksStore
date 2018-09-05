@@ -10,7 +10,7 @@ import { User } from "../models/user.model";
     providedIn: 'root'
 })
 export class UserService {
-    url: string = "https://still-crag-32940.herokuapp.com/api";
+    url: string = "https://books-store11.herokuapp.com/api";
     usersList: User[] = [];
     u: User;
     subAnonymous = new Subject();
