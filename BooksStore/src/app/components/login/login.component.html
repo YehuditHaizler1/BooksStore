@@ -1,0 +1,15 @@
+<div class="login-page">
+    <div class="form">
+        <form [formGroup]="formGroup" (ngSubmit)="submitLogin()" class="login-form">
+            <div *ngFor="let x of obj.keys(formGroup.controls)">
+                <label>{{x}}:</label>
+                <input formControlName="{{x}}" />
+                <div *ngIf="formGroup.controls[x].errors">
+                    <p *ngFor="let err of obj.values(formGroup.controls[x].errors)">{{err}}</p>
+                </div>
+            </div>
+            <!-- <input type="file" formControlName="profilePicture" />  -->
+            <input type="submit" value="Login" [disabled]="formGroup.invalid" />
+        </form>
+    </div>
+</div>

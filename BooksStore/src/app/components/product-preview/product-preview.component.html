@@ -1,0 +1,12 @@
+<div class="bookCard">
+  <img src={{book.volumeInfo.imageLinks}}>
+  <div class='card-body'>
+    <div class='card-text'>
+      <h5>{{book.volumeInfo.title}}</h5>
+      <p>
+        {{book.volumeInfo.subtitle}}
+      </p>
+    </div>
+    <input type="button" value="view deatails" (click)="showViewDeatails()" class="btn">
+  </div>
+</div>

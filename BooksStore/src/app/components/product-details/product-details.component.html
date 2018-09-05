@@ -1,0 +1,21 @@
+<div class="bookCard">
+  <img src={{book.imageLinks}}>
+  <div class='card-body'>
+    <div class='card-text'>
+      <h5>{{book.title}}</h5>
+      <div>
+        <p>{{book.subtitle}}</p>
+        <p>{{book.authors}}</p>
+        <p>{{book.publishedDate}}</p>
+        <p>{{book.language}}</p>
+        <p>{{book.pageCount}}</p>
+        <p>{{book.publisher}}</p>
+      </div>
+    </div>
+    <div class="btnPlace">
+    <input type="button" value="add cart" (click)="addBookToCart()" class="btn" *ngIf="isAnonymous">
+    <input type="button" value="go back" (click)="returnProduct()" class="btn">
+  </div>
+  </div>
+  
+</div>

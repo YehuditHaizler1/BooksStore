@@ -1,0 +1,14 @@
+<div class="bookCard">
+    <img src={{book.imageLinks}}>
+    <div class='card-body'>
+        <div class='card-text'>
+          <h5>{{book.title}}</h5>
+          <p>
+              {{book.subtitle}}
+          </p>
+        </div>
+        <input type="button" value="remove from cart" (click)="removeFromCart()" class="btn"> 
+      
+      </div>
+  </div>
+  

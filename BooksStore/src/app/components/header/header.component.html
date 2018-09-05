@@ -1,0 +1,18 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li routerLinkActive="active" class="nav-item">
+                <a routerLink="/BooksStore/products">products</a>
+            </li>
+            <li routerLinkActive="active" class="nav-item">
+                <a routerLink="/BooksStore/account">my account</a>
+            </li>
+            <li *ngIf="isAnonymous" routerLinkActive="active" class="nav-item">
+                <a routerLink="/BooksStore/cart">my cart</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right nav-item ulPic">
+            <li><img src={{user.profilePicture}}><p>hello {{user.FirstName}} &nbsp;{{user.LastName}}!</p></li>
+        </ul>
+    </div>
+</nav>

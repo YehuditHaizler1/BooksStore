@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-xs-2 col-sm-push-1 text-center">
+        <input type="text" (keyup)="onKeyUp($event)" placeholder="Search..." name="main-search" id="main-search" class="form-control"
+            autofocus /><span>
+            <i class="fa fa-search search-icon glyphicon glyphicon-search"></i></span>
+        <button (click)="tempFunc()">תמונות</button>
+    </div>
+</div>
+<ul class="row">
+    <li *ngFor="let book of books[0]" class=" col-md-4">
+        <app-product-preview [book]="book"></app-product-preview>
+    </li>
+</ul>

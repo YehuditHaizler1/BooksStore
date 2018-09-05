@@ -1,0 +1,19 @@
+
+<nav >
+    <div class="container-fluid row">
+        <ul class="col-md-offset-4">
+            <li routerLinkActive="active" >
+                <a routerLink="login"  *ngIf="!isAnonymous">log-in</a>
+            </li> 
+            <label *ngIf="!isAnonymous" >&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;</label>
+            <li routerLinkActive="active" >
+                <a routerLink="register"  *ngIf="!isAnonymous"> register</a>
+            </li>
+            <li *ngIf="isAnonymous" routerLinkActive="active" >
+                <a routerLink="logout"  *ngIf="isAnonymous" (click)="deleteUserFromLocalStorage()">logout</a>
+            </li>
+        </ul>
+       
+    </div>
+</nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,22 @@
+img{
+    width: 8vw;
+    height: 8vh;
+    margin: auto;
+    display: block;
+}
+p{
+    color: white;
+}
+.ulPic{
+    margin-left: 40vh;
+    margin-top: 1vh;
+}
+.navbar-inverse {
+    background-color: #76e2e2;
+    border-color: #0db3b3;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #5a5d5d;
+}
+
